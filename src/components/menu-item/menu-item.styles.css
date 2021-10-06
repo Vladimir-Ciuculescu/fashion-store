@@ -1,0 +1,94 @@
+.menu-item {
+  min-width: 30%;
+  max-width: 50%;
+  height: 240px;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 0 7.5px 15px;
+  overflow: hidden;
+}
+
+.large {
+  height: 380px;
+  background-position: center;
+}
+
+.content {
+  height: 90px;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: white;
+  border-width: 1.5px;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.content:hover {
+  background-color: black;
+  transition: background-color 2s;
+}
+
+.content:not(:hover) {
+  background-color: white;
+  transition: background-color 2s;
+}
+
+.content:hover > .title {
+  color: white;
+  transition: color 2s;
+}
+
+.content:not(:hover) > .title {
+  color: black;
+  transition: color 2s;
+}
+
+.content:hover > .subtitle {
+  color: white;
+  transition: color 2s;
+}
+
+.content:not(:hover) > .subtitle {
+  color: black;
+  transition: color 2s;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 22px;
+  color: #4a4a4a;
+}
+
+.subtitle {
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.background-image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+
+.menu-item:hover > .background-image {
+  transform: scale(1.1);
+  transition: transform 2s;
+}
+
+.menu-item:not(:hover) > .background-image {
+  transform: scale(1);
+  transition: transform 2s;
+}

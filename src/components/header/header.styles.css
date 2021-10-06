@@ -1,0 +1,23 @@
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-left: 100px;
+}
+
+.options {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  margin-left: 65%;
+  padding: 10px;
+}
+
+.option {
+  margin: 10px;
+  white-space: nowrap;
+}

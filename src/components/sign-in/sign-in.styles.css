@@ -1,0 +1,23 @@
+.SignIn {
+  margin-left: 5%;
+  margin-top: 0.5%;
+}
+
+.span {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.submit-form {
+  margin-top: 40px;
+}
+
+.submit-button {
+  background-color: blue;
+}
+
+.buttons {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}

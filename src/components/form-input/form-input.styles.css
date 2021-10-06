@@ -1,0 +1,36 @@
+.group {
+  position: relative;
+}
+
+.form-input {
+  background: none;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 400px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid black;
+  margin: 25px 0;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-input-label {
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+
+.form-input:focus ~ .form-input-label {
+  top: -14px;
+  font-size: 12px;
+}
